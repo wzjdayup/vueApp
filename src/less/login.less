@@ -1,0 +1,940 @@
+@a:1/3;
+/*公用样式*/
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+html{
+    height: 100%;
+}
+
+body{
+    color:rgba(74,74,74,1);
+    height: 100%;
+    font-size: 42px*@a;
+}
+#app{
+    height: 100%;
+}
+.outbox{
+    height: 100%;
+    background:#fff;
+}
+input{
+    border:none;
+}
+/*登录*/
+.topbg{
+    position: relative;
+    width: 100%;
+    height: 352px*@a;
+    background:url(../assets/顶部背景@3x.png) no-repeat top;
+    background-size:100% 352px*@a;
+}
+.topbg .logo{
+    display:inline-block;
+    width: 300px*@a;
+    height: 300px*@a;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px*@a;
+    top: 180px*@a;
+}
+.topbg b{
+    display:inline-block;
+    width: 30px*@a;
+    height: 52px*@a;
+    background:url(../assets/返回@3x.png) no-repeat top;
+    background-size:30px*@a 52px*@a;
+    position:absolute;
+    top: 40px*@a;
+    left: 50px*@a;
+}
+.loginbottom,.regbottom,.editpasswordbottom {
+     margin-top: 336px*@a;
+     padding:0 90px*@a;
+}
+.loginbottom .telphone,
+.loginbottom .password,
+.regbottom .telphone,
+.regbottom .code,
+.regbottom .reginvitecode,
+.regbottom .password,
+.editpasswordbottom .telphone,
+.editpasswordbottom .code,
+.editpasswordbottom .newpassword,
+.editpasswordbottom .againpassword{
+     height: 132px*@a;
+     line-height: 132px*@a;
+     font-size: 48px*@a;
+     position:relative;
+     border-bottom: 1px solid rgba(204, 204, 204,0.4);
+}
+.telphone input,
+.password input,
+.reginvitecode input,
+.newpassword input,
+.againpassword input{
+    width: 100%;
+    height: 67px*@a;
+    line-height: 67px*@a;
+}
+.code input{
+    width: 60%;
+    height: 67px*@a;
+    line-height: 67px*@a;
+}
+.telphone input::placeholder,
+.password input::placeholder,
+.code input::placeholder,
+.reginvitecode input::placeholder,
+.newpassword input::placeholder,
+.againpassword input::placeholder{
+    color:rgba(204,204,204,1);
+    font-size:48px*@a;
+}
+.telphone b,.password b{
+    display:inline-block;
+    width: 40px*@a;
+    height: 40px*@a;
+    background:url(../assets/清除@3x.png) no-repeat center;
+    background-size:40px*@a 40px*@a;
+    position:absolute;
+    right: 0;
+    top: 46px*@a;
+}
+.toforgetpass{
+    display:block;
+    font-size: 42px*@a;
+    margin-top: 36px*@a;
+    text-align:right;
+}
+.loginbtn,.regbtn,.reset{
+    height:132px*@a;
+    background:#5BACFD;
+    border-radius: 12px*@a ;
+    text-align:center;
+    line-height: 132px*@a;
+    color:#fff;
+    font-size: 48px*@a;
+    margin-top: 96px*@a;
+}
+.reg,.login{
+    text-align:center;
+    margin-top: 36px*@a;
+}
+.reg span,.login span{
+    font-size: 42px*@a;
+    margin-right: 10px*@a;
+}
+.reg .toreg,.login .tologin{
+    color:#5BACFD;
+    font-size: 42px*@a;
+}
+/*注册*/
+.code{
+    position:relative;
+}
+.code b{
+    display:inline-block;
+    width:2px*@a;
+    height:60px*@a;
+    background:rgba(216,216,216,1);
+    position:absolute;
+    top: 35px*@a;
+    right: 240px*@a;
+}
+.code .getcode{
+    margin-left: 30px*@a;
+    font-size: 42px*@a;
+    position:absolute;
+    right: 0;
+}
+.useragreement{
+    margin-top: 37px*@a;
+    padding-left: 70px*@a;
+    position:relative;
+}
+.useragreement .gou{
+    display:inline-block;
+    width: 60px*@a;
+    height: 50px*@a;
+    background:url(../assets/勾选@3x.png) no-repeat ;
+    background-size:60px*@a 50px*@a;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.useragreement .nogou{
+    display:inline-block;
+    width: 50px*@a;
+    height: 50px*@a;
+    background:url(../assets/未勾选@3x.png) no-repeat ;
+    background-size:60px*@a 50px*@a;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.useragreement a{
+    font-size: 42px*@a;
+}
+/*交易记录*/
+.tradinginfo{
+    padding:0 40px*@a;
+}
+.tradinginfo .tradingtime{
+    margin:40px*@a 0;
+}
+.tradingdetail{
+    position: relative;
+}
+.tradingdetail b{
+    display: block;
+    width: 40px*@a;
+    height: 40px*@a;
+    background:url(../assets/绿球@3x.png) no-repeat;
+    background-size:40px*@a 40px*@a;
+    position: absolute;
+    top: 0;
+    left: 10px*@a;
+}
+.tradingdetail .tradingtype{
+    padding-top: 40px*@a;
+    margin-left: 30px*@a;
+    height: 132px*@a;
+    line-height: 132px*@a;
+    border-left: 1px solid #979797;
+}
+.tradingtype .tradingtext{
+    margin-left: 60px*@a;
+}
+.tradingtype .price{
+    float: right;
+    color:rgba(109,190,21,1);
+}
+/*提现申请*/
+.tobankcard{
+    height: 132px*@a;
+    line-height: 132px*@a;
+    padding:0 40px*@a;
+    border-bottom: 1px solid rgba(204, 204, 204,0.4);
+}
+.tobankcard .bankname{
+    color:rgba(73,183,246,1);
+    margin-left: 152px*@a;
+}
+.cashnumber>div:nth-of-type(1){
+     padding:0 40px*@a;
+     margin:25px*@a 0;
+}
+.cashnumber>div:nth-of-type(2){
+    margin-left: 145px*@a;
+    height: 100px*@a;
+    line-height: 100px*@a;
+}
+.cashnumber .number{
+    width: 74%;
+    margin-left: 145px*@a;
+    margin-right: 90px*@a;
+    padding-left: 40px*@a;
+    height: 165px*@a;
+    line-height: 165px*@a;
+    font-size: 144px*@a;
+    border-bottom: 2px solid rgba(204, 204, 204,0.4);
+}
+.cashnumber>div:nth-of-type(3){
+    padding:0 40px*@a;
+     margin:37px*@a 0;
+}
+.cashnumber>div:nth-of-type(3) .cashall{
+    color:rgba(73,183,246,1);
+    margin-left: 17px*@a;
+}
+/*购买商品*/
+.mint-navbar{
+    position: relative;
+}
+.mint-navbar b{
+    display:inline-block;
+    width: 30px*@a;
+    height: 52px*@a;
+    background:url(../assets/返回@2x.png) no-repeat center;
+    background-size:30px*@a 52px*@a;
+    position: absolute;
+    left: 20px*@a;
+    top: 34px*@a;
+}
+.topimg{
+    height: 520px*@a;
+    background:red;
+    position: relative;
+}
+.topimg img{
+    height: 520px*@a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.topimg span{
+    display:inline-block;
+    width:108px*@a;
+    height:60px*@a;
+    background:rgba(0,0,0,0.5);
+    border-radius: 8px ;
+    position: absolute;
+    right: 40px*@a;
+    bottom:10px*@a;
+    text-align:center;
+    line-height: 60px*@a;
+    color:#fff;
+}
+.goodstitle,
+.saleprice,
+.city,
+.starttime,
+.toaddress,{
+    height: 120px*@a;
+    line-height: 120px*@a;
+    border-bottom: 2px solid rgba(204, 204, 204,0.4);
+    padding:0 40px*@a;
+}
+.goodstitle img{
+    width: 50px*@a;
+    height:50px*@a;
+    margin-right: 17px*@a;
+    vertical-align: middle;
+    margin-bottom: 6px*@a;
+}
+.goodstitle .least{
+    float: right;
+    font-size: 36px*@a;
+    color:rgba(155,155,155,1);
+    margin-top: 40px*@a;
+}
+.saleprice{
+    position: relative;
+}
+.saleprice span:nth-of-type(2){
+    text-decoration:line-through;
+    font-size: 36px*@a;
+    color:rgba(155,155,155,1);
+    position: absolute;
+    left: 758px*@a;
+    top: 10px*@a;
+
+}
+.saleprice span:nth-of-type(3){
+    color:rgba(255,64,64,1);
+    font-size: 48px*@a;
+    position: absolute;
+    right: 40px*@a;
+}
+.city span:nth-of-type(1),.starttime span:nth-of-type(1){
+    font-size: 48px*@a;
+    float: left;
+}
+.city span:nth-of-type(2),.starttime span:nth-of-type(2){
+    font-size: 48px*@a;
+    float: right;
+}
+.toaddress{
+    position: relative;
+    padding-left: 87px*@a;
+}
+.toaddress b{
+    display:inline-block;
+    width: 26px*@a;
+    height: 36px*@a;
+    background:url(../assets/dingwei.png) ;
+    background-size:26px*@a 36px*@a;
+    position: absolute;
+    left: 43px*@a;
+    top: 42px*@a;
+}
+.toaddress i{
+    display:inline-block;
+    width: 1px;
+    height: 80px*@a;
+    background:#979797;
+    position: absolute;
+    right: 179px*@a;
+    top: 26px*@a;
+    margin-right: 30px*@a;
+}
+.tohere{
+    position: relative;
+    float: right;
+
+}
+.tohere img{
+    display:block;
+    width: 44px*@a;
+    height: 44px*@a;
+    position: absolute;
+    top: 23px*@a;
+    right: 73px*@a;
+}
+.tohere span{
+    display:inline-block;
+    width: 108px*@a;
+    font-size: 36px*@a;
+    position: absolute;
+    right: 40px*@a;
+    top: 30px*@a;
+}
+.route{
+    background:#fff;
+    padding:0 40px*@a;
+}
+.route .routetitle{
+    height: 132px*@a;
+    line-height: 132px*@a;
+    font-size: 48px*@a;
+}
+.route b{
+    display:block;
+    width: 24px*@a;
+    height: 24px*@a;
+    background:rgba(73,183,246,1);
+    border-radius:50%;
+}
+.routedetail{
+    margin-left: 8px*@a;
+    padding-left: 50px*@a;
+    border-left: 2px solid rgba(73,183,246,1);
+}
+.routedetail .thatday{
+    color:rgba(155,155,155,1);
+    height: 100px*@a;
+    line-height: 100px*@a;
+}
+
+.routedetail .routeadress,
+.routedetail .dinner,
+.routedetail .scenic,
+.routedetail .hotel{
+    margin-top: 50px*@a;
+}
+.routedetail .routeadress span:nth-of-type(1),
+.routedetail .dinner span:nth-of-type(1),
+.routedetail .scenic span:nth-of-type(1),
+.routedetail .hotel span:nth-of-type(1){
+    display:inline-block;
+    width: 85px*@a;
+    float: left;
+}
+.routedetail .routeadress span:nth-of-type(2),
+.routedetail .dinner span:nth-of-type(2),
+.routedetail .scenic span:nth-of-type(2),
+.routedetail .hotel span:nth-of-type(2){
+    display:inline-block;
+    width: 815px*@a;
+    float: left;
+    margin-left: 30px*@a;
+    color:rgba(155,155,155,1);
+}
+.cost,.reserve,.change,.contactway{
+    border-bottom: 2px solid rgba(204, 204, 204,0.4);
+    padding:0 40px*@a;
+}
+.contactway{
+    border-bottom: none;
+}
+.cost div,
+.reserve div,
+.change div,
+.contactway>div{
+    height: 120px*@a;
+    line-height: 120px*@a;
+}
+.cost div:nth-of-type(1),
+.reserve div:nth-of-type(1),
+.change div:nth-of-type(1),
+.contactway>div:nth-of-type(1){
+    font-size: 48px*@a;
+}
+.contactway{
+    margin-bottom: 132px*@a;
+}
+.cost div:nth-of-type(2),
+.reserve div:nth-of-type(2),
+.change div:nth-of-type(2),
+.contactway>div:nth-of-type(2),.contactway>div:nth-of-type(3){
+    color:rgba(155,155,155,1);
+}
+.linkpeple span:nth-of-type(1),.linktel span:nth-of-type(1){
+    float: left;
+}
+.linkpeple span:nth-of-type(2),.linktel span:nth-of-type(2){
+    float: right;
+    color:rgba(74,74,74,1);
+}
+.linktel span:nth-of-type(2){
+    color:rgba(73,183,246,1);
+}
+.buybtn,.choosenumber{
+    height: 132px*@a;
+    line-height: 132px*@a;
+    background:#5BACFD ;
+    text-align:center;
+    color:#fff;
+    font-size: 48px*@a;
+    position: fixed;
+    bottom:0;
+     width: 100%;
+}
+.traffic,.abstract{
+    padding:0 40px*@a;
+    margin-top: 50px*@a;
+}
+/*model*/
+
+.modelbox{
+        width: 100%;
+        min-height: 3400px*@a;
+        background:rgba(0,0,0,0.4);
+        position: absolute;
+        top: 0;
+}
+.choosenumberbox{
+        width: 928px*@a;
+        height: 593px*@a;
+        background:#fff;
+        border-radius: 18px*@a;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        margin-left: -464px*@a;
+}
+.choosenumberbox .choosenumbertitle{
+    text-align:center;
+    margin-top: 50px*@a;
+    margin-bottom: 88px*@a;
+}
+.choosenumberbox .count{
+    margin-left: 167px*@a;
+}
+.count .minus,.count .plus{
+    font-size: 72px*@a;
+}
+.count input{
+    width: 505px*@a;
+    height: 100px*@a;
+    line-height: 100px*@a;
+    font-size: 72px*@a;
+    text-align:center;
+}
+.choosenumberbox .surebtn{
+    margin:150px*@a 64px*@a auto 64px*@a;
+    height:132px*@a;
+    background:rgba(73,183,246,1);
+    border-radius: 18px ;
+    line-height: 132px*@a;
+    text-align:center;
+    color:#fff;
+    font-size: 48px*@a;
+}
+/*支付model*/
+.paybox{
+    width: 100%;
+    min-height: 100%;
+    background:rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+}
+.paymodelbox{
+    width: 900px*@a;
+    height: 600px*@a;
+    background:#fff;
+    border-radius: 18px*@a;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -450px*@a;
+}
+.paymodelbox .paymodelboxtit{
+    font-size: 48px*@a;
+    height: 140px*@a;
+    line-height: 140px*@a;
+    text-align:center;
+    border-bottom: 1px solid rgba(216,216,216,1);
+}
+.paymodelboxtit b{
+    display:inline-block;
+    width: 40px*@a;
+    height: 40px*@a;
+    background:url(../assets/关闭@2x.png);
+    background-size:40px*@a 40px*@a;
+    position: absolute;
+    top: 50px*@a;
+    left: 30px*@a;
+}
+.paymodelbox div{
+    text-align:center;
+    font-size: 48px*@a;
+}
+.paymodelbox .textone{
+    margin:30px*@a auto;
+}
+.payinput{
+    padding:0 40px*@a;
+    margin-top: 60px*@a;
+}
+.payinput input{
+    float: left;
+    display: inline-block;
+    width: 130px*@a;
+    height: 130px*@a;
+    text-align:center;
+    line-height: 130px*@a;
+    border:1px solid rgba(216,216,216,1);
+    font-size: 100px*@a;
+}
+.payinput input:nth-of-type(1),
+.payinput input:nth-of-type(2),
+.payinput input:nth-of-type(3),
+.payinput input:nth-of-type(4),
+.payinput input:nth-of-type(5),{
+    border-right:none;
+}
+/*取消支付*/
+.tipbox{
+    width: 100%;
+    min-height: 100%;
+    background:rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+}
+.tipmodelbox{
+    width: 900px*@a;
+    height: 350px*@a;
+    background:#fff;
+    border-radius: 18px*@a 18px*@a 0px 0px ;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -450px*@a;
+}
+.tipmodelbox .imglogo{
+    width: 206px*@a;
+    height: 106px*@a;
+    position: absolute;
+    top: 30px*@a;
+    left: 50%;
+    margin-left:-103px*@a;
+}
+.tipmodelbox .texttip{
+    text-align:center;
+    font-size: 48px*@a;
+    margin-top: 216px*@a;
+    padding-bottom: 50px*@a;
+    border-bottom:1px solid rgba(216,216,216,1);
+}
+.decidebtn{
+    display:flex;
+    height: 132px*@a;
+    line-height: 132px*@a;
+}
+.decidebtn span:nth-of-type(1){
+    display:inline-block;
+    flex:1;
+    background:#fff;
+    font-size: 48px*@a;
+    height: 100%;
+    border-radius: 0px 0px 0px 18px*@a;
+    text-align:center;
+}
+.decidebtn span:nth-of-type(2){
+    display:inline-block;
+    flex:1;
+    height: 100%;
+    background:rgba(73,183,246,1);
+    font-size: 48px*@a;
+    border-radius: 0px 0px 18px*@a 0px;
+    text-align:center;
+    color:#fff;
+}
+.decide{
+    width: 100%;
+    height:132px*@a;
+    line-height: 132px*@a;
+    text-align:center;
+    background:rgba(73,183,246,1);
+    border-radius: 0px 0px 18px*@a 18px*@a ;
+    font-size: 48px*@a;
+    color:#fff;
+}
+/*选择城市*/
+.topcity{
+    width: 100%;
+    height: 360px*@a;
+    background:url(../assets/背景图@3x.png) top;
+    background-size:100% 360px*@a;
+    overflow: hidden;
+}
+.topcitytitle {
+    color:#fff;
+    font-size: 48px*@a;
+    margin-top: 20px*@a;
+    text-align:center;
+    position: relative;
+}
+.topcitytitle b{
+    display: inline-block;
+    width: 30px*@a;
+    height: 52px*@a;
+    background:url(../assets/返回@3x.png) top left;
+    background-size:30px*@a 52px*@a;
+    position: absolute;
+    left: 40px*@a;
+    top: 10px*@a;
+}
+.topcity .inputbox{
+    width: 800px*@a;
+    height: 132px*@a;
+    margin:0 auto;
+    margin-top: 40px*@a;
+    padding-left: 100px*@a;
+    position: relative;
+    border-radius:18px*@a;
+    background:#fff;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    border-radius:18px*@a;
+}
+.inputbox b{
+    display: inline-block;
+    width: 40px*@a;
+    height: 40px*@a;
+    background:url(../assets/搜索@3x.png) top left;
+    background-size:40px*@a 40px*@a;
+    position: absolute;
+    left: 30px*@a;
+    top: 46px*@a;
+}
+.citybox{
+    padding:0 30px*@a;
+}
+
+.nowcity{
+    margin-top: 36px*@a;
+    margin-bottom: 30px*@a;
+}
+.nowcityname .nowspan{
+    display: inline-block;
+    width:220px*@a;
+    height:100px*@a;
+    background:rgba(73,183,246,1);
+    border-radius: 8px*@a;
+    color:#fff;
+    text-align:center;
+    line-height: 100px*@a;
+}
+.citybox .hasopenedname .nowspan{
+    display: inline-block;
+    width:220px*@a;
+    height:100px*@a;
+    background:rgba(73,183,246,1);
+    border-radius: 8px*@a;
+    color:#fff;
+    text-align:center;
+    line-height: 100px*@a;
+}
+.citybox .hasopened{
+    margin-top: 70px*@a;
+    margin-bottom: 30px*@a;
+}
+
+.citybox .hasopenedname span{
+    display: inline-block;
+    width:232px*@a;
+    height:100px*@a;
+    background:rgba(255,255,255,1);
+    border-radius: 8px*@a ;
+    border:2px*@a solid #ccc;
+    text-align:center;
+    line-height: 100px*@a;
+    margin-right: 140px*@a;
+    margin-bottom: 36px*@a;
+}
+.citybox .hasopenedname span:nth-of-type(3n){
+    margin-right: 0;
+}
+/*搜索*/
+.searchdiv{
+    display: inline-block;
+    height: 80px*@a;
+    line-height: 80px*@a;
+    background: #ececec;
+    width: 70%;
+    position: relative;
+    margin-left: 90px*@a;
+    margin-top: 26px*@a;
+}
+.searchdiv i{
+    display: inline-block;
+    width: 40px*@a;
+    height: 40px*@a;
+    background:url(../assets/搜索@3x.png);
+    background-size:40px*@a 40px*@a;
+    position: absolute;
+    top: 20px*@a;
+    left: 20px*@a;
+}
+.searchdiv input{
+    background: #ececec;
+    height: 80px*@a;
+    line-height: 80px*@a;
+    position: absolute;
+    left: 80px*@a;
+    width: 90%;
+}
+.searchdiv input::placeholder{
+    color:rgba(204,204,204,1);
+}
+.cancle{
+    font-size: 48px*@a;
+    float: right;
+    margin-right: 30px*@a;
+}
+.historybox{
+    background-color:rgba(0,0,0,0.4);
+    height: 100%;
+}
+.history{
+    background:#fff;
+}
+.history li{
+    padding:0 40px*@a;
+    height: 132px*@a;
+    line-height: 132px*@a;
+    font-size: 36px*@a;
+    border-bottom: 1px solid rgba(204, 204, 204,0.4);
+}
+.clearrecord{
+    text-align:center;
+    font-size: 36px*@a;
+    color:rgba(204,204,204,1);
+    height: 132px*@a;
+    line-height: 132px*@a;
+}
+.seachresult{
+    height: 132px*@a;
+    line-height: 132px*@a;
+    padding-left: 180px*@a;
+    border-bottom: 1px solid rgba(204, 204, 204,0.4);
+    font-size: 36px*@a;
+    position: relative;
+}
+.seachresult b{
+    display:inline-block;
+    width: 60px*@a;
+    height: 60px*@a;
+    background:url(../assets/线路@3x-2.png);
+    background-size:60px*@a 60px*@a;
+    position: absolute;
+    left: 30px*@a;
+    top: 38px*@a;
+}
+.seachresult i{
+    display:inline-block;
+    width: 50px*@a;
+    height: 50px*@a;
+    background:url(../assets/团@3x.png);
+    background-size:50px*@a 50px*@a;
+    position: absolute;
+    left: 120px*@a;
+    top: 43px*@a;
+}
+.seachresult .price{
+    color:#f55459;
+    position: absolute;
+    right: 30px*@a;
+}
+/*商品详情*/
+.mint-tab-container{
+    margin-top: 20px*@a;
+}
+.linename,
+.property,
+.listprice,
+.arrowbuy,
+.fromcity,
+.contactperson,
+.contacttel,
+.lookfor
+{
+    height: 132px*@a;
+    line-height: 132px*@a;
+    border-bottom: 2px*@a solid rgba(204, 204, 204,0.8);
+    padding:0 40px*@a;
+    background:#fff;
+}
+.picture{
+    height: 260px*@a;
+    padding:0 40px*@a;
+    background:#fff;
+    border-bottom: 2px*@a solid rgba(204, 204, 204,0.8);
+    line-height: 260px*@a;
+}
+.lookfor{
+    position: relative;
+}
+.linename span:nth-of-type(1),
+.property span:nth-of-type(1),
+.listprice span:nth-of-type(1),
+.arrowbuy span:nth-of-type(1),
+.fromcity span:nth-of-type(1),
+.contactperson span:nth-of-type(1),
+.contacttel span:nth-of-type(1),
+.lookfor span:nth-of-type(1),
+.picture span:nth-of-type(1){
+    display:inline-block;
+    width: 252px*@a;
+    text-align:left;
+}
+.linename span:nth-of-type(2),
+.property span:nth-of-type(2),
+.arrowbuy span:nth-of-type(2),
+.fromcity span:nth-of-type(2),
+.contactperson span:nth-of-type(2){
+    color:rgba(155,155,155,1);
+}
+.listprice span:nth-of-type(2){
+    color:rgba(251,126,126,1);
+}
+.contacttel span:nth-of-type(2){
+    color:rgba(73,183,246,1);
+}
+.lookfor b{
+    display:inline-block;
+    width: 24px*@a;
+    height: 44px*@a;
+    background:url(../assets/进入@3x.png);
+    background-size:24px*@a 44px*@a;
+    position: absolute;
+    top: 44px*@a;
+    right: 40px*@a;
+}
+.picture img{
+    width: 180px*@a;
+    height: 180px*@a;
+    vertical-align:middle;
+    margin-right: 30px*@a;
+}
+.addbtn{
+    width:100%;
+    height:132px*@a;
+    background:rgba(124,216,107,1);
+    text-align:center;
+    line-height: 132px*@a;
+    font-size: 48px*@a;
+    color:#fff;
+    position: fixed;
+    bottom:0;
+}
